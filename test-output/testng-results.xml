@@ -1,31 +1,57 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="2" total="3" passed="1" failed="0" skipped="0">
+<testng-results ignored="2" total="5" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-12-18T15:37:27 IST" name="Suite" finished-at="2025-12-18T15:37:44 IST" duration-ms="16666">
+  <suite started-at="2025-12-18T16:47:27 IST" name="Suite" finished-at="2025-12-18T16:47:37 IST" duration-ms="10299">
     <groups>
       <group name="HomePage">
-        <method signature="HomePageValidation.TC01_SearchProduct()[pri:0, instance:TestCases.HomePageValidation@40005471]" name="TC01_SearchProduct" class="TestCases.HomePageValidation"/>
+        <method signature="HomePageValidation.TC01_SearchProduct()[pri:0, instance:TestCases.HomePageValidation@b3ca52e]" name="TC01_SearchProduct" class="TestCases.HomePageValidation"/>
       </group> <!-- HomePage -->
       <group name="regression">
-        <method signature="HomePageValidation.TC01_SearchProduct()[pri:0, instance:TestCases.HomePageValidation@40005471]" name="TC01_SearchProduct" class="TestCases.HomePageValidation"/>
+        <method signature="HomePageValidation.TC01_SearchProduct()[pri:0, instance:TestCases.HomePageValidation@b3ca52e]" name="TC01_SearchProduct" class="TestCases.HomePageValidation"/>
+        <method signature="ProductPageValidation.TC01_SelectFeatures()[pri:1, instance:TestCases.ProductPageValidation@45c7e403]" name="TC01_SelectFeatures" class="TestCases.ProductPageValidation"/>
+        <method signature="ProductPageValidation.TC02_AddProduct()[pri:2, instance:TestCases.ProductPageValidation@45c7e403]" name="TC02_AddProduct" class="TestCases.ProductPageValidation"/>
       </group> <!-- regression -->
+      <group name="Product">
+        <method signature="ProductPageValidation.TC01_SelectFeatures()[pri:1, instance:TestCases.ProductPageValidation@45c7e403]" name="TC01_SelectFeatures" class="TestCases.ProductPageValidation"/>
+        <method signature="ProductPageValidation.TC02_AddProduct()[pri:2, instance:TestCases.ProductPageValidation@45c7e403]" name="TC02_AddProduct" class="TestCases.ProductPageValidation"/>
+      </group> <!-- Product -->
     </groups>
-    <test started-at="2025-12-18T15:37:27 IST" name="Test" finished-at="2025-12-18T15:37:44 IST" duration-ms="16666">
-      <class name="TestCases.HomePageValidation">
-        <test-method is-config="true" signature="OpenBrowser()[pri:0, instance:TestCases.HomePageValidation@40005471]" started-at="2025-12-18T15:37:28 IST" name="OpenBrowser" finished-at="2025-12-18T15:37:33 IST" duration-ms="5029" status="PASS">
+    <test started-at="2025-12-18T16:47:27 IST" name="Sigin" finished-at="2025-12-18T16:47:37 IST" duration-ms="10299">
+      <class name="TestCases.ProductPageValidation">
+        <test-method is-config="true" signature="setupPageObject()[pri:0, instance:TestCases.ProductPageValidation@45c7e403]" started-at="2025-12-18T16:47:34 IST" name="setupPageObject" finished-at="2025-12-18T16:47:34 IST" duration-ms="161" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- OpenBrowser -->
-        <test-method signature="TC01_SearchProduct()[pri:0, instance:TestCases.HomePageValidation@40005471]" started-at="2025-12-18T15:37:33 IST" name="TC01_SearchProduct" finished-at="2025-12-18T15:37:43 IST" duration-ms="10053" status="PASS">
+        </test-method> <!-- setupPageObject -->
+        <test-method signature="TC01_SelectFeatures()[pri:1, instance:TestCases.ProductPageValidation@45c7e403]" started-at="2025-12-18T16:47:34 IST" name="TC01_SelectFeatures" depends-on-groups="HomePage" finished-at="2025-12-18T16:47:37 IST" duration-ms="2906" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC01_SelectFeatures -->
+        <test-method is-config="true" signature="setupPageObject()[pri:0, instance:TestCases.ProductPageValidation@45c7e403]" started-at="2025-12-18T16:47:37 IST" name="setupPageObject" finished-at="2025-12-18T16:47:37 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupPageObject -->
+        <test-method signature="TC02_AddProduct()[pri:2, instance:TestCases.ProductPageValidation@45c7e403]" started-at="2025-12-18T16:47:37 IST" name="TC02_AddProduct" finished-at="2025-12-18T16:47:37 IST" duration-ms="64" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC02_AddProduct -->
+      </class> <!-- TestCases.ProductPageValidation -->
+      <class name="TestCases.HomePageValidation">
+        <test-method signature="TC01_SearchProduct()[pri:0, instance:TestCases.HomePageValidation@b3ca52e]" started-at="2025-12-18T16:47:28 IST" name="TC01_SearchProduct" finished-at="2025-12-18T16:47:33 IST" duration-ms="5441" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC01_SearchProduct -->
-        <test-method is-config="true" signature="TearDown()[pri:0, instance:TestCases.HomePageValidation@40005471]" started-at="2025-12-18T15:37:43 IST" name="TearDown" finished-at="2025-12-18T15:37:44 IST" duration-ms="436" status="PASS">
+      </class> <!-- TestCases.HomePageValidation -->
+      <class name="TestCases.SignInValidation">
+        <test-method is-config="true" signature="OpenBrowser()[pri:0, instance:TestCases.SignInValidation@2aceadd4]" started-at="2025-12-18T16:47:16 IST" name="OpenBrowser" finished-at="2025-12-18T16:47:27 IST" duration-ms="10483" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- OpenBrowser -->
+        <test-method is-config="true" signature="TearDown()[pri:0, instance:TestCases.SignInValidation@2aceadd4]" started-at="2025-12-18T16:47:39 IST" name="TearDown" finished-at="2025-12-18T16:47:40 IST" duration-ms="485" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TearDown -->
-      </class> <!-- TestCases.HomePageValidation -->
-    </test> <!-- Test -->
+      </class> <!-- TestCases.SignInValidation -->
+    </test> <!-- Sigin -->
   </suite> <!-- Suite -->
 </testng-results>

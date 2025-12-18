@@ -4,15 +4,20 @@
 
 <groups>
 <run>
-<include name="HomePage"></include>
+<include name="Product"></include>
 </run></groups>
 <listeners>
 <listener class-name="utilities.ListenerClass"></listener>
 </listeners>
-  <test thread-count="5" name="Test">
+  <test thread-count="5" name="Sigin">
     <classes>
-      <class name="TestCases.HomePageValidation"/>
-      <class name="TestCases.SignInValidation"/>
+    <class name="TestCases.SignInValidation"/>  
+    <class name="TestCases.HomePageValidation"/>
+    <class name="TestCases.ProductPageValidation"></class>
     </classes>
   </test> <!-- Test -->
+  
+  
+  
+  
 </suite> <!-- Suite -->

@@ -25,7 +25,7 @@ public class BaseTest {
 	static WebDriver driver;
 	ReadConfig rc;
 
-	@BeforeSuite(alwaysRun = true)
+	@BeforeClass(alwaysRun = true)
 	public void OpenBrowser() {
 		rc = new ReadConfig();
 		String browser = rc.GetBrowser();
@@ -73,10 +73,10 @@ public class BaseTest {
 	
 
 	
-//	@AfterClass(alwaysRun = true)
-//	public void TearDown() {
-//		driver.close();
-//	}
+	@AfterClass(alwaysRun = true)
+	public void TearDown() {
+		driver.close();
+	}
 	
 	
 	public static void ScreenShots(String testname,String status) {

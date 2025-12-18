@@ -13,7 +13,7 @@ public class ExcelReader {
 
     public Object[][] Data() throws Exception {
 
-        String path = "D:\\Practice_Excel.xlsx";
+        String path = "D:\\data_testing.xlsx";
 
         FileInputStream fis = new FileInputStream(path);
         Workbook wb = WorkbookFactory.create(fis);

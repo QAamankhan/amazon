@@ -13,7 +13,7 @@ public class ReadConfig {
 		try {
 			
 			ps = new Properties();
-			FileInputStream fis= new FileInputStream(System.getProperty("user.dir")+"\\configuration\\congif.properties");
+			FileInputStream fis= new FileInputStream(System.getProperty("user.dir")+"\\configuration\\config.properties");
 //			FileInputStream fis= new FileInputStream("D:\\Work_Space\\Project3\\configuration\\congif.properties");
 			ps.load(fis);
 

@@ -1,5 +1,7 @@
 package TestCases;
 
+import static org.testng.Assert.fail;
+
 import java.io.File;
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.By;
@@ -23,7 +25,7 @@ import utilities.ReadConfig;
 
 public class BaseTest {
 
-	static WebDriver driver;
+	public static WebDriver driver;
 	ReadConfig rc;
 
 	@BeforeSuite(alwaysRun = true)

@@ -1,31 +1,38 @@
 package TestCases;
 
-import org.testng.Assert;
-import org.testng.annotations.BeforeClass;
-import org.testng.annotations.Test;
+import static org.testng.Assert.assertEquals;
 
+import org.testng.Assert;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Test;
 import pages.HomePage;
 
-public class HomePageValidation  extends BaseTest{
+public class HomePageValidation extends BaseTest {
 
-	HomePage  hp;
-	
-	
-	@Test(groups = {"HomePage","regression"})
-	public void TC01_SearchProduct() {
-	hp = new HomePage(driver);
-	String title=hp.SearchProduct("laptop");
-	if (title.toLowerCase().contains("laptop")) {
-		System.out.println( "User Navigate"+title+"page");
-		Assert.assertTrue(true);
-		
-	}else {
-		System.out.println( "Something Worng"+title);
-//		Assert.assertTrue(false);
-	}
-	}
-	
-	
-	
-	
+    HomePage hp;
+
+    
+    @BeforeMethod(alwaysRun = true)
+    public void Object() {
+    	 hp = new HomePage(driver);
+    }
+    
+   @Test(groups = {"HomePage", "regression"})
+    public void TC01_LanguageValidation() throws Exception {
+        boolean reuslt = hp.ChageLangauge("HI");
+        assertEquals(reuslt, true);
+       }
+
+    @Test(groups = {"HomePage", "regression","Product"})
+    public void TC02_SearchProduct() {
+        String title = hp.SearchProduct("laptop");
+
+        Assert.assertTrue(
+            title.toLowerCase().contains("laptop"),
+            "User not navigated to laptop page"
+        );
+
+        System.out.println("User navigated to page: " + title);
+    }
 }

@@ -27,7 +27,7 @@ public class ListenerClass implements ITestListener{
 	
 	public void configureReport() {
 		ReadConfig config = new ReadConfig();
-		String timestamp= new SimpleDateFormat("yyyy-mm-dd hh.mm.ss").format(new Date()); 
+		String timestamp = new SimpleDateFormat("yyyy-MM-dd HH.mm.ss").format(new Date());
 		String reportname= "report"+timestamp+".html";
 		
 //		htmlExtentReporter= new ExtentSparkReporter("D:\\Work_Space\\Project3\\Reports\\report.html");

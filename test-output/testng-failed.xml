@@ -7,18 +7,26 @@
   <test thread-count="5" name="Sigin(failed)">
     <groups>
       <run>
-        <include name="Product"/>
+        <include name="regression"/>
       </run>
     </groups>
     <classes>
-      <class name="TestCases.ProductPageValidation">
+      <class name="TestCases.SignInValidation">
         <methods>
-          <include name="TC01_SelectFeatures"/>
+          <include name="TearDown"/>
+          <include name="Objcet"/>
+          <include name="OpenBrowser"/>
+          <include name="TC02_FillCreds" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- TestCases.SignInValidation -->
+      <class name="TestCases.HomePageValidation">
+        <methods>
           <include name="TearDown"/>
           <include name="OpenBrowser"/>
-          <include name="setupPageObject"/>
+          <include name="TC01_LanguageValidation"/>
+          <include name="Object"/>
         </methods>
-      </class> <!-- TestCases.ProductPageValidation -->
+      </class> <!-- TestCases.HomePageValidation -->
     </classes>
   </test> <!-- Sigin(failed) -->
 </suite> <!-- Failed suite [Suite] -->

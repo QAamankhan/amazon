@@ -19,32 +19,26 @@ public class ProductResultPage  extends BaseClass{
 
 	@FindBy(xpath="//span[@class='a-button-text a-declarative']")WebElement Featured;
 	@FindBy(xpath="//a[@id='s-result-sort-select_4']") WebElement newestArrivals;
-	@FindBy(xpath="//li[@id='p_123/110955']//i[@class='a-icon a-icon-checkbox']")WebElement apple;
-	@FindBy(xpath = "//li[@id='p_123/247341']//i[@class='a-icon a-icon-checkbox']") WebElement dell;
+	
 
 	public void OptOnProductPage() {
-		ElementVisible(apple);
-		ElementClickable(apple);
-		
+			
 		ElementVisible(Featured);
 		ElementClickable(Featured);
 		
 		ElementVisible(newestArrivals);
 		ElementClickable(newestArrivals);
-		
-		
-		
-		
-		
+				
 	}	
 	
-	@FindBy(xpath = "//button[@aria-label='Add to cart']")
+	@FindBy(xpath = "//button[@name='submit.addToCart']")
 	List<WebElement> addToCartbtnElement;
 
 	public void AddProductInCart() {
 
 		int count = 0;
 		for (WebElement list : addToCartbtnElement) {
+			ElementVisible(list);
 			ElementClickable(list);
 			count++;
 			if (count == 4) {

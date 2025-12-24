@@ -9,12 +9,55 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">Suite</th></tr>
-<tr><td><a href="#t0">Sigin</a></td><td class="num">3</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">10,299</td><td>HomePage, Product</td><td></td></tr>
+<tr><td><a href="#t0">Sigin</a></td><td class="num">6</td><td class="num">0</td><td class="num">0</td><td class="num attn">2</td><td class="num">49,308</td><td>regression</td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Sigin &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">TestCases.HomePageValidation</td><td><a href="#m0">TC01_SearchProduct</a></td><td rowspan="1">1766056648299</td><td rowspan="1">5441</td></tr><tr class="passedodd"><td rowspan="2">TestCases.ProductPageValidation</td><td><a href="#m1">TC01_SelectFeatures</a></td><td rowspan="1">1766056654306</td><td rowspan="1">2906</td></tr><tr class="passedodd"><td><a href="#m2">TC02_AddProduct</a></td><td rowspan="1">1766056657431</td><td rowspan="1">64</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Sigin &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">TestCases.HomePageValidation</td><td><a href="#m0">TC01_LanguageValidation</a></td><td rowspan="1">1766586823869</td><td rowspan="1">20240</td></tr><tr class="failedodd"><td rowspan="1">TestCases.SignInValidation</td><td><a href="#m1">TC02_FillCreds</a></td><td rowspan="1">1766586815632</td><td rowspan="1">7821</td></tr><tr><th colspan="4">Sigin &#8212; passed</th></tr><tr class="passedeven"><td rowspan="2">TestCases.CartPageValidation</td><td><a href="#m2">TC01_CartValidation</a></td><td rowspan="1">1766586852385</td><td rowspan="1">4170</td></tr><tr class="passedeven"><td><a href="#m3">TC02_RemoveProduct</a></td><td rowspan="1">1766586856976</td><td rowspan="1">24</td></tr><tr class="passedodd"><td rowspan="1">TestCases.HomePageValidation</td><td><a href="#m4">TC02_SearchProduct</a></td><td rowspan="1">1766586844404</td><td rowspan="1">4901</td></tr><tr class="passedeven"><td rowspan="2">TestCases.ProductPageValidation</td><td><a href="#m5">TC01_SelectFeatures</a></td><td rowspan="1">1766586849909</td><td rowspan="1">1992</td></tr><tr class="passedeven"><td><a href="#m6">TC02_AddProduct</a></td><td rowspan="1">1766586852079</td><td rowspan="1">34</td></tr><tr class="passedodd"><td rowspan="1">TestCases.SignInValidation</td><td><a href="#m7">TC01_SignIn</a></td><td rowspan="1">1766586809439</td><td rowspan="1">4464</td></tr></tbody>
 </table>
-<h2>Sigin</h2><h3 id="m0">TestCases.HomePageValidation#TC01_SearchProduct</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">TestCases.ProductPageValidation#TC01_SelectFeatures</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">TestCases.ProductPageValidation#TC02_AddProduct</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Sigin</h2><h3 id="m0">TestCases.HomePageValidation#TC01_LanguageValidation</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator &apos;By.xpath: //div[contains(text(),&apos;EN&apos;)]&apos; (tried for 20 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at base.BaseClass.ElementVisible(BaseClass.java:30)
+	at pages.HomePage.ChageLangauge(HomePage.java:33)
+	at TestCases.HomePageValidation.TC01_LanguageValidation(HomePageValidation.java:23)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[contains(text(),&apos;EN&apos;)]&quot;}
+  (Session info: chrome=143.0.7499.111)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
+Build info: version: &apos;4.38.0&apos;, revision: &apos;6b412e825c*&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.6&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [26952baa363bb0bf50464fb994036568, findElement {using=xpath, value=//div[contains(text(),&apos;EN&apos;)]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 143.0.7499.111, chrome: {chromedriverVersion: 143.0.7499.169 (164b20aab62..., userDataDir: C:\Users\HP\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63272}, goog:processID: 10456, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63272/devtoo..., se:cdpVersion: 143.0.7499.111, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 26952baa363bb0bf50464fb994036568
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:557)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:380)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:374)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy16.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:308)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:294)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:291)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
+	... 29 more
+... Removed 28 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">TestCases.SignInValidation#TC02_FillCreds</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th></tr><tr class="param stripe"><td>88aamankhan@gmail.com</td><td>Amna@071125</td><td>pass</td></tr><tr><th colspan="3">Exception</th></tr><tr><td colspan="3"><div class="stacktrace">java.lang.AssertionError: Login not successful expected [true] but found [false]
+	at TestCases.SignInValidation.TC02_FillCreds(SignInValidation.java:34)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 28 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">TestCases.CartPageValidation#TC01_CartValidation</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">TestCases.CartPageValidation#TC02_RemoveProduct</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">TestCases.HomePageValidation#TC02_SearchProduct</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">TestCases.ProductPageValidation#TC01_SelectFeatures</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">TestCases.ProductPageValidation#TC02_AddProduct</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">TestCases.SignInValidation#TC01_SignIn</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

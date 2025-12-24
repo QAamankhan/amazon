@@ -2,6 +2,7 @@ package base;
 
 import java.time.Duration;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -33,5 +34,13 @@ public class BaseClass {
 		js = (JavascriptExecutor) driver;
 		js.executeScript("arguments[0]scrollIntoView(true);", null);
 	}
+	
+	protected WebElement waitForVisible(By locator) {
+        return wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
+    }
+
+    protected WebElement waitForClickable(By locator) {
+        return wait.until(ExpectedConditions.elementToBeClickable(locator));
+    }
 
 }

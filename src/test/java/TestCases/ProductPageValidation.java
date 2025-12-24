@@ -13,14 +13,13 @@ public class ProductPageValidation  extends BaseTest{
 	        pp = new ProductResultPage(driver);
 	    }
 	
-	@Test(dependsOnGroups ="HomePage",groups = {"Product" ,"regression"},priority = 1)
+	@Test(groups = {"Product" ,"regression"})
 	public void TC01_SelectFeatures() {
-		
 		pp.OptOnProductPage();
 	}
 	
 	
-	@Test(groups ={"Product" ,"regression"} ,priority = 2)
+	@Test(groups ={"Product" ,"regression","cart"})
 	public void TC02_AddProduct() {
 		pp.AddProductInCart();
 	}

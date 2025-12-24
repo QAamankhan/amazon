@@ -1,53 +1,244 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="2" total="5" passed="3" failed="0" skipped="0">
+<testng-results ignored="0" total="8" passed="6" failed="2" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-12-18T16:47:27 IST" name="Suite" finished-at="2025-12-18T16:47:37 IST" duration-ms="10299">
+  <suite started-at="2025-12-24T20:03:27 IST" name="Suite" finished-at="2025-12-24T20:04:17 IST" duration-ms="49308">
     <groups>
       <group name="HomePage">
-        <method signature="HomePageValidation.TC01_SearchProduct()[pri:0, instance:TestCases.HomePageValidation@b3ca52e]" name="TC01_SearchProduct" class="TestCases.HomePageValidation"/>
+        <method signature="HomePageValidation.TC01_LanguageValidation()[pri:0, instance:TestCases.HomePageValidation@61322f9d]" name="TC01_LanguageValidation" class="TestCases.HomePageValidation"/>
+        <method signature="HomePageValidation.TC02_SearchProduct()[pri:0, instance:TestCases.HomePageValidation@61322f9d]" name="TC02_SearchProduct" class="TestCases.HomePageValidation"/>
+        <method signature="SignInValidation.TC01_SignIn()[pri:0, instance:TestCases.SignInValidation@b3ca52e]" name="TC01_SignIn" class="TestCases.SignInValidation"/>
+        <method signature="SignInValidation.TC02_FillCreds(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:TestCases.SignInValidation@b3ca52e]" name="TC02_FillCreds" class="TestCases.SignInValidation"/>
       </group> <!-- HomePage -->
       <group name="regression">
-        <method signature="HomePageValidation.TC01_SearchProduct()[pri:0, instance:TestCases.HomePageValidation@b3ca52e]" name="TC01_SearchProduct" class="TestCases.HomePageValidation"/>
-        <method signature="ProductPageValidation.TC01_SelectFeatures()[pri:1, instance:TestCases.ProductPageValidation@45c7e403]" name="TC01_SelectFeatures" class="TestCases.ProductPageValidation"/>
-        <method signature="ProductPageValidation.TC02_AddProduct()[pri:2, instance:TestCases.ProductPageValidation@45c7e403]" name="TC02_AddProduct" class="TestCases.ProductPageValidation"/>
+        <method signature="CartPageValidation.TC01_CartValidation()[pri:0, instance:TestCases.CartPageValidation@510f3d34]" name="TC01_CartValidation" class="TestCases.CartPageValidation"/>
+        <method signature="CartPageValidation.TC02_RemoveProduct()[pri:0, instance:TestCases.CartPageValidation@510f3d34]" name="TC02_RemoveProduct" class="TestCases.CartPageValidation"/>
+        <method signature="HomePageValidation.TC01_LanguageValidation()[pri:0, instance:TestCases.HomePageValidation@61322f9d]" name="TC01_LanguageValidation" class="TestCases.HomePageValidation"/>
+        <method signature="HomePageValidation.TC02_SearchProduct()[pri:0, instance:TestCases.HomePageValidation@61322f9d]" name="TC02_SearchProduct" class="TestCases.HomePageValidation"/>
+        <method signature="ProductPageValidation.TC01_SelectFeatures()[pri:0, instance:TestCases.ProductPageValidation@6ad82709]" name="TC01_SelectFeatures" class="TestCases.ProductPageValidation"/>
+        <method signature="ProductPageValidation.TC02_AddProduct()[pri:0, instance:TestCases.ProductPageValidation@6ad82709]" name="TC02_AddProduct" class="TestCases.ProductPageValidation"/>
+        <method signature="SignInValidation.TC01_SignIn()[pri:0, instance:TestCases.SignInValidation@b3ca52e]" name="TC01_SignIn" class="TestCases.SignInValidation"/>
+        <method signature="SignInValidation.TC02_FillCreds(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:TestCases.SignInValidation@b3ca52e]" name="TC02_FillCreds" class="TestCases.SignInValidation"/>
       </group> <!-- regression -->
+      <group name="SignIn">
+        <method signature="SignInValidation.TC01_SignIn()[pri:0, instance:TestCases.SignInValidation@b3ca52e]" name="TC01_SignIn" class="TestCases.SignInValidation"/>
+        <method signature="SignInValidation.TC02_FillCreds(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:TestCases.SignInValidation@b3ca52e]" name="TC02_FillCreds" class="TestCases.SignInValidation"/>
+      </group> <!-- SignIn -->
       <group name="Product">
-        <method signature="ProductPageValidation.TC01_SelectFeatures()[pri:1, instance:TestCases.ProductPageValidation@45c7e403]" name="TC01_SelectFeatures" class="TestCases.ProductPageValidation"/>
-        <method signature="ProductPageValidation.TC02_AddProduct()[pri:2, instance:TestCases.ProductPageValidation@45c7e403]" name="TC02_AddProduct" class="TestCases.ProductPageValidation"/>
+        <method signature="HomePageValidation.TC02_SearchProduct()[pri:0, instance:TestCases.HomePageValidation@61322f9d]" name="TC02_SearchProduct" class="TestCases.HomePageValidation"/>
+        <method signature="ProductPageValidation.TC01_SelectFeatures()[pri:0, instance:TestCases.ProductPageValidation@6ad82709]" name="TC01_SelectFeatures" class="TestCases.ProductPageValidation"/>
+        <method signature="ProductPageValidation.TC02_AddProduct()[pri:0, instance:TestCases.ProductPageValidation@6ad82709]" name="TC02_AddProduct" class="TestCases.ProductPageValidation"/>
       </group> <!-- Product -->
+      <group name="cart">
+        <method signature="CartPageValidation.TC01_CartValidation()[pri:0, instance:TestCases.CartPageValidation@510f3d34]" name="TC01_CartValidation" class="TestCases.CartPageValidation"/>
+        <method signature="CartPageValidation.TC02_RemoveProduct()[pri:0, instance:TestCases.CartPageValidation@510f3d34]" name="TC02_RemoveProduct" class="TestCases.CartPageValidation"/>
+        <method signature="ProductPageValidation.TC02_AddProduct()[pri:0, instance:TestCases.ProductPageValidation@6ad82709]" name="TC02_AddProduct" class="TestCases.ProductPageValidation"/>
+      </group> <!-- cart -->
     </groups>
-    <test started-at="2025-12-18T16:47:27 IST" name="Sigin" finished-at="2025-12-18T16:47:37 IST" duration-ms="10299">
+    <test started-at="2025-12-24T20:03:27 IST" name="Sigin" finished-at="2025-12-24T20:04:17 IST" duration-ms="49308">
       <class name="TestCases.ProductPageValidation">
-        <test-method is-config="true" signature="setupPageObject()[pri:0, instance:TestCases.ProductPageValidation@45c7e403]" started-at="2025-12-18T16:47:34 IST" name="setupPageObject" finished-at="2025-12-18T16:47:34 IST" duration-ms="161" status="PASS">
+        <test-method is-config="true" signature="setupPageObject()[pri:0, instance:TestCases.ProductPageValidation@6ad82709]" started-at="2025-12-24T20:04:09 IST" name="setupPageObject" finished-at="2025-12-24T20:04:09 IST" duration-ms="5" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupPageObject -->
-        <test-method signature="TC01_SelectFeatures()[pri:1, instance:TestCases.ProductPageValidation@45c7e403]" started-at="2025-12-18T16:47:34 IST" name="TC01_SelectFeatures" depends-on-groups="HomePage" finished-at="2025-12-18T16:47:37 IST" duration-ms="2906" status="PASS">
+        <test-method signature="TC01_SelectFeatures()[pri:0, instance:TestCases.ProductPageValidation@6ad82709]" started-at="2025-12-24T20:04:09 IST" name="TC01_SelectFeatures" finished-at="2025-12-24T20:04:11 IST" duration-ms="1992" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC01_SelectFeatures -->
-        <test-method is-config="true" signature="setupPageObject()[pri:0, instance:TestCases.ProductPageValidation@45c7e403]" started-at="2025-12-18T16:47:37 IST" name="setupPageObject" finished-at="2025-12-18T16:47:37 IST" duration-ms="2" status="PASS">
+        <test-method is-config="true" signature="setupPageObject()[pri:0, instance:TestCases.ProductPageValidation@6ad82709]" started-at="2025-12-24T20:04:12 IST" name="setupPageObject" finished-at="2025-12-24T20:04:12 IST" duration-ms="2" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupPageObject -->
-        <test-method signature="TC02_AddProduct()[pri:2, instance:TestCases.ProductPageValidation@45c7e403]" started-at="2025-12-18T16:47:37 IST" name="TC02_AddProduct" finished-at="2025-12-18T16:47:37 IST" duration-ms="64" status="PASS">
+        <test-method signature="TC02_AddProduct()[pri:0, instance:TestCases.ProductPageValidation@6ad82709]" started-at="2025-12-24T20:04:12 IST" name="TC02_AddProduct" finished-at="2025-12-24T20:04:12 IST" duration-ms="34" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC02_AddProduct -->
       </class> <!-- TestCases.ProductPageValidation -->
-      <class name="TestCases.HomePageValidation">
-        <test-method signature="TC01_SearchProduct()[pri:0, instance:TestCases.HomePageValidation@b3ca52e]" started-at="2025-12-18T16:47:28 IST" name="TC01_SearchProduct" finished-at="2025-12-18T16:47:33 IST" duration-ms="5441" status="PASS">
+      <class name="TestCases.CartPageValidation">
+        <test-method is-config="true" signature="Object()[pri:0, instance:TestCases.CartPageValidation@510f3d34]" started-at="2025-12-24T20:04:12 IST" name="Object" finished-at="2025-12-24T20:04:12 IST" duration-ms="116" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TC01_SearchProduct -->
+        </test-method> <!-- Object -->
+        <test-method signature="TC01_CartValidation()[pri:0, instance:TestCases.CartPageValidation@510f3d34]" started-at="2025-12-24T20:04:12 IST" name="TC01_CartValidation" finished-at="2025-12-24T20:04:16 IST" duration-ms="4170" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC01_CartValidation -->
+        <test-method is-config="true" signature="Object()[pri:0, instance:TestCases.CartPageValidation@510f3d34]" started-at="2025-12-24T20:04:16 IST" name="Object" finished-at="2025-12-24T20:04:16 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Object -->
+        <test-method signature="TC02_RemoveProduct()[pri:0, instance:TestCases.CartPageValidation@510f3d34]" started-at="2025-12-24T20:04:16 IST" name="TC02_RemoveProduct" finished-at="2025-12-24T20:04:17 IST" duration-ms="24" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC02_RemoveProduct -->
+      </class> <!-- TestCases.CartPageValidation -->
+      <class name="TestCases.HomePageValidation">
+        <test-method is-config="true" signature="Object()[pri:0, instance:TestCases.HomePageValidation@61322f9d]" started-at="2025-12-24T20:03:43 IST" name="Object" finished-at="2025-12-24T20:03:43 IST" duration-ms="12" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Object -->
+        <test-method signature="TC01_LanguageValidation()[pri:0, instance:TestCases.HomePageValidation@61322f9d]" started-at="2025-12-24T20:03:43 IST" name="TC01_LanguageValidation" finished-at="2025-12-24T20:04:04 IST" duration-ms="20240" status="FAIL">
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.xpath: //div[contains(text(),'EN')]' (tried for 20 second(s) with 500 milliseconds interval)]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.xpath: //div[contains(text(),'EN')]' (tried for 20 second(s) with 500 milliseconds interval)
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+at base.BaseClass.ElementVisible(BaseClass.java:30)
+at pages.HomePage.ChageLangauge(HomePage.java:33)
+at TestCases.HomePageValidation.TC01_LanguageValidation(HomePageValidation.java:23)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[contains(text(),'EN')]"}
+  (Session info: chrome=143.0.7499.111)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
+Build info: version: '4.38.0', revision: '6b412e825c*'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.6'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [26952baa363bb0bf50464fb994036568, findElement {using=xpath, value=//div[contains(text(),'EN')]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 143.0.7499.111, chrome: {chromedriverVersion: 143.0.7499.169 (164b20aab62..., userDataDir: C:\Users\HP\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63272}, goog:processID: 10456, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63272/devtoo..., se:cdpVersion: 143.0.7499.111, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 26952baa363bb0bf50464fb994036568
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:557)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:380)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:374)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at jdk.proxy2/jdk.proxy2.$Proxy16.isDisplayed(Unknown Source)
+at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:308)
+at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:294)
+at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:291)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
+... 29 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC01_LanguageValidation -->
+        <test-method is-config="true" signature="Object()[pri:0, instance:TestCases.HomePageValidation@61322f9d]" started-at="2025-12-24T20:04:04 IST" name="Object" finished-at="2025-12-24T20:04:04 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Object -->
+        <test-method signature="TC02_SearchProduct()[pri:0, instance:TestCases.HomePageValidation@61322f9d]" started-at="2025-12-24T20:04:04 IST" name="TC02_SearchProduct" finished-at="2025-12-24T20:04:09 IST" duration-ms="4901" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC02_SearchProduct -->
       </class> <!-- TestCases.HomePageValidation -->
       <class name="TestCases.SignInValidation">
-        <test-method is-config="true" signature="OpenBrowser()[pri:0, instance:TestCases.SignInValidation@2aceadd4]" started-at="2025-12-18T16:47:16 IST" name="OpenBrowser" finished-at="2025-12-18T16:47:27 IST" duration-ms="10483" status="PASS">
+        <test-method is-config="true" signature="OpenBrowser()[pri:0, instance:TestCases.SignInValidation@b3ca52e]" started-at="2025-12-24T20:03:22 IST" name="OpenBrowser" finished-at="2025-12-24T20:03:27 IST" duration-ms="4897" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- OpenBrowser -->
-        <test-method is-config="true" signature="TearDown()[pri:0, instance:TestCases.SignInValidation@2aceadd4]" started-at="2025-12-18T16:47:39 IST" name="TearDown" finished-at="2025-12-18T16:47:40 IST" duration-ms="485" status="PASS">
+        <test-method is-config="true" signature="Objcet()[pri:0, instance:TestCases.SignInValidation@b3ca52e]" started-at="2025-12-24T20:03:29 IST" name="Objcet" finished-at="2025-12-24T20:03:29 IST" duration-ms="64" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Objcet -->
+        <test-method signature="TC01_SignIn()[pri:0, instance:TestCases.SignInValidation@b3ca52e]" started-at="2025-12-24T20:03:29 IST" name="TC01_SignIn" finished-at="2025-12-24T20:03:33 IST" duration-ms="4464" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC01_SignIn -->
+        <test-method is-config="true" signature="Objcet()[pri:0, instance:TestCases.SignInValidation@b3ca52e]" started-at="2025-12-24T20:03:35 IST" name="Objcet" finished-at="2025-12-24T20:03:35 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Objcet -->
+        <test-method signature="TC02_FillCreds(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:TestCases.SignInValidation@b3ca52e]" started-at="2025-12-24T20:03:35 IST" name="TC02_FillCreds" data-provider="ExcelData" finished-at="2025-12-24T20:03:43 IST" duration-ms="7821" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[88aamankhan@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Amna@071125]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[pass]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Login not successful expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Login not successful expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1590)
+at org.testng.Assert.assertTrue(Assert.java:57)
+at TestCases.SignInValidation.TC02_FillCreds(SignInValidation.java:34)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC02_FillCreds -->
+        <test-method is-config="true" signature="TearDown()[pri:0, instance:TestCases.SignInValidation@b3ca52e]" started-at="2025-12-24T20:04:17 IST" name="TearDown" finished-at="2025-12-24T20:04:18 IST" duration-ms="346" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TearDown -->

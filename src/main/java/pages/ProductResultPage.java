@@ -31,14 +31,13 @@ public class ProductResultPage  extends BaseClass{
 				
 	}	
 	
-	@FindBy(xpath = "//button[@name='submit.addToCart']")
-	List<WebElement> addToCartbtnElement;
+	@FindBy(xpath = "//button[@name='submit.addToCart']") private List<WebElement> addToCartbtnElement;
 
 	public void AddProductInCart() {
 
 		int count = 0;
 		for (WebElement list : addToCartbtnElement) {
-			ElementVisible(list);
+			ScrollElement(list);
 			ElementClickable(list);
 			count++;
 			if (count == 4) {

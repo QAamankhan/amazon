@@ -37,7 +37,7 @@ public class BaseTest {
 		switch (browser.toLowerCase()) {
 		case "chrome":
 			ChromeOptions options= new ChromeOptions();
-			options.addArguments("--incognito");
+			options.addArguments("--incognito","--headless");
 			driver = new ChromeDriver(options);
 			driver.navigate().to(url);
 			break;

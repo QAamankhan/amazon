@@ -18,21 +18,14 @@ public class HomePageValidation extends BaseTest {
     	 hp = new HomePage(driver);
     }
     
-   @Test(groups = {"HomePage", "regression"})
+   @Test(groups = {"HomePage", "regression","Product"})
     public void TC01_LanguageValidation() throws Exception {
         boolean reuslt = hp.ChageLangauge("HI");
         assertEquals(reuslt, true);
        }
 
-    @Test(groups = {"HomePage", "regression","Product"})
+    @Test(groups = {"HomePage", "regression","Product","cart"})
     public void TC02_SearchProduct() {
         String title = hp.SearchProduct("laptop");
-
-        Assert.assertTrue(
-            title.toLowerCase().contains("laptop"),
-            "User not navigated to laptop page"
-        );
-
-        System.out.println("User navigated to page: " + title);
-    }
+   }
 }

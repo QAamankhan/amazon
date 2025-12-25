@@ -11,6 +11,22 @@
       </run>
     </groups>
     <classes>
+      <class name="TestCases.ProductPageValidation">
+        <methods>
+          <include name="TearDown"/>
+          <include name="TC01_SelectFeatures"/>
+          <include name="OpenBrowser"/>
+          <include name="setupPageObject"/>
+        </methods>
+      </class> <!-- TestCases.ProductPageValidation -->
+      <class name="TestCases.CartPageValidation">
+        <methods>
+          <include name="TearDown"/>
+          <include name="TC01_CartValidation"/>
+          <include name="OpenBrowser"/>
+          <include name="Object"/>
+        </methods>
+      </class> <!-- TestCases.CartPageValidation -->
       <class name="TestCases.SignInValidation">
         <methods>
           <include name="TearDown"/>
@@ -22,6 +38,7 @@
       <class name="TestCases.HomePageValidation">
         <methods>
           <include name="TearDown"/>
+          <include name="TC02_SearchProduct"/>
           <include name="OpenBrowser"/>
           <include name="TC01_LanguageValidation"/>
           <include name="Object"/>

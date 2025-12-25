@@ -28,29 +28,44 @@ public class CartPage extends BaseClass {
 	}
 
 	public void removeItemsFromCart() {
-		By cartCount = By.xpath("//span[@id='sc-subtotal-label-buybox']");
-		By decrementBtn = By.xpath("//button[@data-a-selector='decrement']");
 
-		
-		while (true) {
-			
-			if (driver.findElements(cartCount).isEmpty()) {
-	            System.out.println("Cart is empty (element not present)");
+	    By cartCount = By.xpath("//span[contains(@id,'sc-subtotal-label')]");
+	    By decrementBtn = By.xpath("//button[@data-a-selector='decrement']");
+
+	    int safetyCounter = 0;
+
+	    while (safetyCounter < 10) {   // infinite loop avoid
+	        safetyCounter++;
+
+	        if (driver.findElements(cartCount).size() == 0) {
+	            System.out.println("Cart is empty or subtotal not present");
 	            break;
 	        }
-			
-			WebElement countElement = waitForVisible(cartCount);
-			String itemText = countElement.getText();
-			int count = Integer.parseInt(itemText.replaceAll("\\D+", ""));
 
-			if (count == 0) {
-				System.out.println("Cart is empty");
-				break;
-			} else {
-				waitForClickable(decrementBtn).click();
-				System.out.println("Item removed, remaining: " + (count - 1));
-			}
-		}
+	        WebElement countElement =
+	                new WebDriverWait(driver, Duration.ofSeconds(10))
+	                        .until(ExpectedConditions.visibilityOfElementLocated(cartCount));
+
+	        String itemText = countElement.getText().replaceAll("\\D+", "");
+
+	        if (itemText.isEmpty()) {
+	            System.out.println("No item count found");
+	            break;
+	        }
+
+	        int count = Integer.parseInt(itemText);
+
+	        if (count <= 0) {
+	            System.out.println("Cart empty");
+	            break;
+	        }
+
+	        new WebDriverWait(driver, Duration.ofSeconds(10))
+	                .until(ExpectedConditions.elementToBeClickable(decrementBtn))
+	                .click();
+
+	        System.out.println("Item removed, remaining: " + (count - 1));
+	    }
 	}
 
 }

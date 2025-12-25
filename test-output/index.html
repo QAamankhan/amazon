@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -39,7 +39,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Suite" class="navigator-link">
-              <span class="suite-name border-failed">Suite</span>
+              <span class="suite-name border-passed">Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -92,26 +92,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">8 methods, 2 failed,   6 passed</span>
-                  </li>
-                  <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
-                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
-                    </span>
-                    <div class="method-list-content failed suite-Suite">
-                      <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="TestCases.HomePageValidation" class="method navigator-link" hash-for-method="TC01_LanguageValidation">TC01_LanguageValidation</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="TestCases.SignInValidation" class="method navigator-link" hash-for-method="TC02_FillCreds(88aamankhan@gmail.com, Amna@071125, pass)">TC02_FillCreds(88aamankhan@gmail.com, Amna@071125, pass)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content failed suite-Suite -->
+                    <span class="method-stats">8 methods,   8 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -127,6 +108,11 @@
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="TestCases.HomePageValidation" class="method navigator-link" hash-for-method="TC01_LanguageValidation">TC01_LanguageValidation</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="TestCases.ProductPageValidation" class="method navigator-link" hash-for-method="TC01_SelectFeatures">TC01_SelectFeatures</a> <!-- method navigator-link -->
                       </span>
                       <br/>
@@ -138,6 +124,11 @@
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="TestCases.ProductPageValidation" class="method navigator-link" hash-for-method="TC02_AddProduct">TC02_AddProduct</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="TestCases.SignInValidation" class="method navigator-link" hash-for-method="TC02_FillCreds(88aamankhan@gmail.com, Amna@071125, pass)">TC02_FillCreds(88aamankhan@gmail.com, Amna@071125, pass)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -162,90 +153,24 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite" class="panel Suite">
-          <div class="suite-Suite-class-failed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
-              <span class="class-name">TestCases.SignInValidation</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="TC02_FillCreds(88aamankhan@gmail.com, Amna@071125, pass)">
-                  </a> <!-- TC02_FillCreds(88aamankhan@gmail.com, Amna@071125, pass) -->
-                  <span class="method-name">TC02_FillCreds</span>
-                  <span class="parameters">(88aamankhan@gmail.com,Amna@071125,pass)</span>
-                  <div class="stack-trace">java.lang.AssertionError: Login not successful expected [true] but found [false]
-	at TestCases.SignInValidation.TC02_FillCreds(SignInValidation.java:34)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-... Removed 28 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-failed -->
-          <div class="suite-Suite-class-failed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
-              <span class="class-name">TestCases.HomePageValidation</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="TC01_LanguageValidation">
-                  </a> <!-- TC01_LanguageValidation -->
-                  <span class="method-name">TC01_LanguageValidation</span>
-                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator &apos;By.xpath: //div[contains(text(),&apos;EN&apos;)]&apos; (tried for 20 second(s) with 500 milliseconds interval)
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
-	at base.BaseClass.ElementVisible(BaseClass.java:30)
-	at pages.HomePage.ChageLangauge(HomePage.java:33)
-	at TestCases.HomePageValidation.TC01_LanguageValidation(HomePageValidation.java:23)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[contains(text(),&apos;EN&apos;)]&quot;}
-  (Session info: chrome=143.0.7499.111)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
-Build info: version: &apos;4.38.0&apos;, revision: &apos;6b412e825c*&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.6&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [26952baa363bb0bf50464fb994036568, findElement {using=xpath, value=//div[contains(text(),&apos;EN&apos;)]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 143.0.7499.111, chrome: {chromedriverVersion: 143.0.7499.169 (164b20aab62..., userDataDir: C:\Users\HP\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63272}, goog:processID: 10456, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63272/devtoo..., se:cdpVersion: 143.0.7499.111, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 26952baa363bb0bf50464fb994036568
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:557)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:380)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:374)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy16.isDisplayed(Unknown Source)
-	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:308)
-	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:294)
-	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:291)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
-	... 29 more
-... Removed 28 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-failed -->
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">TestCases.SignInValidation</span>
+              <span class="class-name">TestCases.ProductPageValidation</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="TC01_SignIn">
-                  </a> <!-- TC01_SignIn -->
-                  <span class="method-name">TC01_SignIn</span>
+                  <a name="TC01_SelectFeatures">
+                  </a> <!-- TC01_SelectFeatures -->
+                  <span class="method-name">TC01_SelectFeatures</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC02_AddProduct">
+                  </a> <!-- TC02_AddProduct -->
+                  <span class="method-name">TC02_AddProduct</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -275,14 +200,22 @@ Session ID: 26952baa363bb0bf50464fb994036568
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">TestCases.HomePageValidation</span>
+              <span class="class-name">TestCases.SignInValidation</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="TC02_SearchProduct">
-                  </a> <!-- TC02_SearchProduct -->
-                  <span class="method-name">TC02_SearchProduct</span>
+                  <a name="TC01_SignIn">
+                  </a> <!-- TC01_SignIn -->
+                  <span class="method-name">TC01_SignIn</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC02_FillCreds(88aamankhan@gmail.com, Amna@071125, pass)">
+                  </a> <!-- TC02_FillCreds(88aamankhan@gmail.com, Amna@071125, pass) -->
+                  <span class="method-name">TC02_FillCreds</span>
+                  <span class="parameters">(88aamankhan@gmail.com,Amna@071125,pass)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -290,21 +223,21 @@ Session ID: 26952baa363bb0bf50464fb994036568
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">TestCases.ProductPageValidation</span>
+              <span class="class-name">TestCases.HomePageValidation</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="TC01_SelectFeatures">
-                  </a> <!-- TC01_SelectFeatures -->
-                  <span class="method-name">TC01_SelectFeatures</span>
+                  <a name="TC01_LanguageValidation">
+                  </a> <!-- TC01_LanguageValidation -->
+                  <span class="method-name">TC01_LanguageValidation</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="TC02_AddProduct">
-                  </a> <!-- TC02_AddProduct -->
-                  <span class="method-name">TC02_AddProduct</span>
+                  <a name="TC02_SearchProduct">
+                  </a> <!-- TC02_SearchProduct -->
+                  <span class="method-name">TC02_SearchProduct</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -385,6 +318,10 @@ Session ID: 26952baa363bb0bf50464fb994036568
               <span class="test-group-name">Product</span>
               <br/>
               <div class="method-in-group">
+                <span class="method-in-group-name">TC01_LanguageValidation</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
                 <span class="method-in-group-name">TC01_SelectFeatures</span>
                 <br/>
               </div> <!-- method-in-group -->
@@ -422,6 +359,10 @@ Session ID: 26952baa363bb0bf50464fb994036568
               </div> <!-- method-in-group -->
               <div class="method-in-group">
                 <span class="method-in-group-name">TC02_RemoveProduct</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">TC02_SearchProduct</span>
                 <br/>
               </div> <!-- method-in-group -->
             </div> <!-- test-group -->
@@ -479,42 +420,42 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(8);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'TC01_LanguageValidation')
-data.setCell(0, 2, 'TestCases.HomePageValidation')
-data.setCell(0, 3, 20240);
+data.setCell(0, 1, 'TC02_FillCreds')
+data.setCell(0, 2, 'TestCases.SignInValidation')
+data.setCell(0, 3, 13441);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'TC02_FillCreds')
-data.setCell(1, 2, 'TestCases.SignInValidation')
-data.setCell(1, 3, 7821);
+data.setCell(1, 1, 'TC01_LanguageValidation')
+data.setCell(1, 2, 'TestCases.HomePageValidation')
+data.setCell(1, 3, 7563);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'TC02_SearchProduct')
 data.setCell(2, 2, 'TestCases.HomePageValidation')
-data.setCell(2, 3, 4901);
+data.setCell(2, 3, 3829);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'TC01_SignIn')
-data.setCell(3, 2, 'TestCases.SignInValidation')
-data.setCell(3, 3, 4464);
+data.setCell(3, 1, 'TC01_CartValidation')
+data.setCell(3, 2, 'TestCases.CartPageValidation')
+data.setCell(3, 3, 2000);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'TC01_CartValidation')
-data.setCell(4, 2, 'TestCases.CartPageValidation')
-data.setCell(4, 3, 4170);
+data.setCell(4, 1, 'TC01_SignIn')
+data.setCell(4, 2, 'TestCases.SignInValidation')
+data.setCell(4, 3, 1459);
 data.setCell(5, 0, 5)
 data.setCell(5, 1, 'TC01_SelectFeatures')
 data.setCell(5, 2, 'TestCases.ProductPageValidation')
-data.setCell(5, 3, 1992);
+data.setCell(5, 3, 818);
 data.setCell(6, 0, 6)
 data.setCell(6, 1, 'TC02_AddProduct')
 data.setCell(6, 2, 'TestCases.ProductPageValidation')
-data.setCell(6, 3, 34);
+data.setCell(6, 3, 49);
 data.setCell(7, 0, 7)
 data.setCell(7, 1, 'TC02_RemoveProduct')
 data.setCell(7, 2, 'TestCases.CartPageValidation')
-data.setCell(7, 3, 24);
+data.setCell(7, 3, 40);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 43 seconds</span>
+              <span class="suite-total-time">Total running time: 29 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -533,25 +474,25 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="ignored-class-div">
-              <span class="ignored-class-name">TestCases.CartPageValidation</span>
+              <span class="ignored-class-name">TestCases.ProductPageValidation</span>
               <div class="ignored-methods-div">
+                <span class="ignored-method-name">TearDown</span>
+                <br/>
                 <span class="ignored-method-name">OpenBrowser</span>
                 <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">TestCases.CartPageValidation</span>
+              <div class="ignored-methods-div">
                 <span class="ignored-method-name">TearDown</span>
+                <br/>
+                <span class="ignored-method-name">OpenBrowser</span>
                 <br/>
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
             <div class="ignored-class-div">
               <span class="ignored-class-name">TestCases.HomePageValidation</span>
-              <div class="ignored-methods-div">
-                <span class="ignored-method-name">TearDown</span>
-                <br/>
-                <span class="ignored-method-name">OpenBrowser</span>
-                <br/>
-              </div> <!-- ignored-methods-div -->
-            </div> <!-- ignored-class-div -->
-            <div class="ignored-class-div">
-              <span class="ignored-class-name">TestCases.ProductPageValidation</span>
               <div class="ignored-methods-div">
                 <span class="ignored-method-name">TearDown</span>
                 <br/>
@@ -574,87 +515,83 @@ return data;
               </div> <!-- configuration-suite before -->
               <div class="configuration-method before">
                 <span class="method-name">Objcet</span>
-                <span class="method-start">6411 ms</span>
+                <span class="method-start">12120 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">TC01_SignIn</span>
-                <span class="method-start">6476 ms</span>
+                <span class="method-start">12161 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">Objcet</span>
-                <span class="method-start">12668 ms</span>
+                <span class="method-start">15406 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">TC02_FillCreds(88aamankhan@gmail.com, Amna@071125, pass)</span>
-                <span class="method-start">12669 ms</span>
+                <span class="method-start">15414 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">TestCases.HomePageValidation</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">Object</span>
-                <span class="method-start">20894 ms</span>
+                <span class="method-start">29153 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">TC01_LanguageValidation</span>
-                <span class="method-start">20906 ms</span>
+                <span class="method-start">29183 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">Object</span>
-                <span class="method-start">41439 ms</span>
+                <span class="method-start">36959 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">TC02_SearchProduct</span>
-                <span class="method-start">41441 ms</span>
+                <span class="method-start">36962 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">TestCases.ProductPageValidation</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setupPageObject</span>
-                <span class="method-start">46941 ms</span>
+                <span class="method-start">40999 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">TC01_SelectFeatures</span>
-                <span class="method-start">46946 ms</span>
+                <span class="method-start">41023 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">setupPageObject</span>
-                <span class="method-start">49114 ms</span>
+                <span class="method-start">42060 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">TC02_AddProduct</span>
-                <span class="method-start">49116 ms</span>
+                <span class="method-start">42062 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">TestCases.CartPageValidation</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">Object</span>
-                <span class="method-start">49306 ms</span>
+                <span class="method-start">42292 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">TC01_CartValidation</span>
-                <span class="method-start">49422 ms</span>
+                <span class="method-start">42296 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">Object</span>
-                <span class="method-start">54012 ms</span>
+                <span class="method-start">44433 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">TC02_RemoveProduct</span>
-                <span class="method-start">54013 ms</span>
+                <span class="method-start">44436 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">TestCases.SignInValidation</div> <!-- chronological-class-name -->
               <div class="configuration-suite after">
                 <span class="method-name">TearDown</span>
-                <span class="method-start">54966 ms</span>
+                <span class="method-start">45457 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
